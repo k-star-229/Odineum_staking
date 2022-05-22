@@ -1,0 +1,37 @@
+@import "../../App.scss";
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  font-family: "BebasNeue";
+  font-size: 18px;
+  color: white;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  .links {
+    min-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1260px) {
+      min-width: 400px;
+    }
+    @media (max-width: 830px) {
+      min-width: 300px;
+      flex-direction: column;
+    }
+  }
+  img {
+    position: absolute;
+    bottom: 0;
+    &.right {
+      right: 0;
+    }
+    &.left {
+      left: 0;
+    }
+    @media (max-width: 830px) {
+      width: 120px;
+    }
+  }
+}

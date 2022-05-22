@@ -1,0 +1,62 @@
+@import "../../../App.scss";
+
+.title {
+  font-size: 135px;
+  line-height: 204px;
+  color: #ffc737;
+  font-weight: 800;
+  font-family: "NexaBold";
+  filter: drop-shadow(0px 22px 10.5px #000000);
+  z-index: 1;
+  @media (max-width: 992px) {
+    font-size: 100px;
+  }
+  @media (max-width: 600px) {
+    font-size: 55px;
+  }
+}
+
+.base {
+  position: absolute;
+  bottom: -10px;
+  @media (max-width: 992px) {
+    max-width: 530px;
+    bottom: 5px;
+  }
+  @media (max-width: 992px) {
+    max-width: 530px;
+    bottom: 5px;
+  }
+  @media (max-width: 600px) {
+    max-width: 330px;
+    bottom: 42px;
+  }
+}
+
+.roadmapItem {
+  display: flex;
+  img {
+    width: 81x;
+    height: 100px;
+    margin-bottom: 30px;
+  }
+  div {
+    font-family: "BebasNeue";
+    font-size: 45px;
+    color: white;
+    line-height: 40px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    @media (max-width: 600px) {
+      font-size: 30px;      
+    }
+  }
+  @media (max-width: 600px) {
+    flex-wrap: wrap;   
+    div {
+      margin-left: 0;
+      margin-right: 0px;
+    } 
+  }
+}

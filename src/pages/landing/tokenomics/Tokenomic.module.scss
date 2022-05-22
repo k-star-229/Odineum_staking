@@ -1,0 +1,134 @@
+@import "../../../App.scss";
+
+.title {
+  font-size: 135px;
+  line-height: 204px;
+  color: #ffc737;
+  font-weight: 800;
+  font-family: "NexaBold";
+  filter: drop-shadow(0px 22px 10.5px #000000);
+  z-index: 1;
+  @media (max-width: 992px) {
+    font-size: 100px;
+  }
+  @media (max-width: 718px) {
+    font-size: 55px;
+  }
+  @media (max-width: 400px) {
+    font-size: 45px;
+  }
+}
+
+.base {
+  position: absolute;
+  bottom: -10px;
+}
+
+.tokenomic {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px;
+  h3 {
+    font-family: "GothamBlack";
+    font-size: 50px;
+    line-height: 37px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #ffc737;
+    font-weight: 800;
+    text-align: center;
+    filter: drop-shadow(0px 11px 3px rgba(0, 0, 0, 0.39));
+    @media (max-width: 600px) {
+      font-size: 32px;
+    }
+  }
+  p {
+    font-size: 29px;
+    line-height: 37px;
+    color: #ffffff;
+    font-family: "BebasNeue";
+    text-align: center;
+  }
+  .lottery {
+    display: flex;
+    flex-direction: column;
+    max-width: 741px;
+    align-items: center;
+    margin-bottom: 50px;
+    img {
+      max-width: 500px !important;
+      width: 100%;
+    }
+  }
+  .steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../assets/steps.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    max-width: 625px;
+    width: 100%;
+    height: 420px;
+    transition: background-size 0.3s;
+    @media (max-width: 590px) {
+      background-size: 200% 100%;
+    }
+    h1 {
+      font-size: 22px;
+      line-height: 5px;
+      color: #ffffff;
+      font-weight: 800;
+      font-family: "GothamBlack";
+      text-align: center;
+      filter: drop-shadow(0px 9px 6.5px rgba(0, 0, 0, 0.43));
+    }
+    h2 {
+      font-size: 26px;
+      color: #ffffff;
+      line-height: 27px;
+      margin-top: 15px;
+      font-family: "BebasNeue";
+      text-align: center;
+      filter: drop-shadow(0px 9px 6.5px rgba(0, 0, 0, 0.43));
+    }
+    h5 {
+      font-size: 19px;
+      color: #ffffff;
+      line-height: 18px;
+      margin-top: 0px;
+      font-family: "BebasNeue";
+      text-align: center;
+      filter: drop-shadow(0px 9px 6.5px rgba(0, 0, 0, 0.43));
+    }
+    h6 {
+      font-size: 15px;
+      color: #ffffff;
+      line-height: 20px;
+      margin-top: 6px;
+      margin-bottom: 9px;
+      font-family: "GothamBlack";
+      text-align: left;
+      filter: drop-shadow(0px 9px 6.5px rgba(0, 0, 0, 0.43));
+    }
+  }
+  .stages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 920px;
+    img {
+      max-width: 600px !important;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+  @media (max-width: 992px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

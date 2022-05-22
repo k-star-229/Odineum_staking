@@ -1,0 +1,107 @@
+@import "../../../App.scss";
+
+.banner {
+  div:last-child {
+    @media (max-width: 992px) {
+      margin-top: 100px;
+    }
+    @media (max-width: 500px) {
+      max-width: 322px;
+    }
+  }
+  @media (max-width: 1024px) {
+    padding-top: 100px;
+  }
+  @media (max-width: 1366px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.bannerIntro {
+  h3 {
+    font-family: "NexaBook";
+    font-size: 54px;
+    padding-left: 15px;
+    color: #ffc737;
+    text-align: left;
+    margin-bottom: -10px;
+    font-weight: 500;
+    text-shadow: 1px 10px 20px black;
+    @media (max-width: 992px) {
+      font-size: 36px;
+    }
+    @media (max-width: 500px) {
+      font-size: 28px;
+    }
+  }
+  div > p {
+    font-family: "NexaBold";
+    font-size: 173px;
+    margin: 0;
+    padding: 0;
+    color: #ffc737;
+    text-align: left;
+    text-shadow: 3px 26px 10px black;
+    @media (max-width: 992px) {
+      font-size: 100px;
+    }
+    @media (max-width: 500px) {
+      font-size: 68px;
+    }
+  }
+  div > img {
+    position: absolute;
+    bottom: -5px;
+    right: 50%;
+    transform: translateX(50%);
+    max-width: 880px;
+    cursor: pointer;
+    @media (max-width: 992px) {
+      right: 100%;
+      transform: translateX(100%);
+      max-width: 480px;
+    }
+    @media (max-width: 500px) {
+      max-width: 322px;
+    }
+  }
+  h4 {
+    font-family: "NexaBook";
+    font-size: 43px;
+    padding-left: 15px;
+    color: white;
+    text-shadow: 1px 10px 10px black;
+    @media (max-width: 992px) {
+      font-size: 26px;
+    }
+    @media (max-width: 992px) {
+      font-size: 26px;
+    }
+  }
+}
+.bannerNft {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  cursor: pointer;
+  &:hover {
+    animation: vibrate 2s linear infinite;
+  }
+  @media (max-width: 840px) {
+    min-width: 250px;
+  }
+}
+
+@keyframes vibrate {
+  0% {
+    top: 50%;
+  }
+  50% {
+    top: 45%;
+  }
+  100% {
+    top: 50%;
+  }
+}

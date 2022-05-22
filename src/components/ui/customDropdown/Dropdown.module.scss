@@ -1,0 +1,64 @@
+.button {
+  font-family: NexaBook;
+  min-width: 130px;
+  height: 80px;
+  background-color: #414141;
+  border-radius: 20px;
+  font-size: 19px;
+  div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:first-child {
+      border-right: 1px solid #373737;
+      padding-right: 10px;
+    }
+    &:last-child {
+      margin-left: -20px;
+    }
+  }
+  @media (max-width: 1470px) {
+    min-width: 100px;
+    height: 40px;
+  }
+}
+
+.list {
+  font-size: 32px;
+  font-family: "NexaBook";
+  white-space: nowrap;
+  div:last-child{
+    width: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  background-color: #414141;
+  top: 80px;
+  right: 0;
+  font-family: NexaBook;
+  font-size: 19px;
+  width: 130px;
+  border-radius: 20px;
+  @media (max-width: 1470px) {
+    top: 65px;
+  }
+}
+
+.dropdown1 {
+  position: absolute;
+  background-color: #414141;
+  top: 50px;
+  right: 0;
+  font-family: NexaBook;
+  font-size: 19px;
+  width: 230px;
+  border-radius: 20px;
+  @media (max-width: 1470px) {
+    top: 40px;
+  }
+}

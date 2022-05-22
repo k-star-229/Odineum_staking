@@ -1,0 +1,74 @@
+.stakeContainer{
+  background-image: url(../../assets/bg_stake_mobile.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 976px) {
+    background-image: url(../../assets/bg_stake.png);
+  }
+}
+
+.seekOwner {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 18px;
+  background: linear-gradient(to right, #d5bf46 0%, #d5bf46 50%, #4d4d4d 50%, #4d4d4d 100%);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.seekOwner:hover {
+  opacity: 1;
+}
+
+.seekOwner::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 60px;
+  height: 25px;
+  background: #0f0f0f;
+  cursor: pointer;
+  border-radius:15px
+}
+
+.seekOwner::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #0f0f0f;
+  cursor: pointer;
+}
+
+
+.seekStake {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 18px;
+  background: linear-gradient(to right, #d5bf46 0%, #d5bf46 50%, #c3c3c3 50%, #c3c3c3 100%);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.seekStake:hover {
+  opacity: 1;
+}
+
+.seekStake::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 60px;
+  height: 25px;
+  background: #ebebeb;
+  cursor: pointer;
+  border-radius:15px
+}
+
+.seekStake::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #ebebeb;
+  cursor: pointer;
+}

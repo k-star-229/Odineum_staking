@@ -1,0 +1,123 @@
+@import "../../../App.scss";
+
+.title {
+  font-size: 135px;
+  line-height: 204px;
+  color: #ffc737;
+  font-weight: 800;
+  font-family: "NexaBold";
+  filter: drop-shadow(0px 22px 10.5px #000000);
+  z-index: 1;
+  @media (max-width: 992px) {
+    font-size: 100px;
+  }
+  @media (max-width: 718px) {
+    font-size: 55px;
+  }
+  @media (max-width: 400px) {
+    font-size: 45px;
+  }
+}
+
+.base {
+  position: absolute;
+  bottom: -72px;
+  @media (max-width: 992px) {
+    bottom: -22px;
+    width: 250px;
+  }
+}
+
+.nfts {
+  @media (max-width: 992px) {
+    background-image: none;
+  }
+}
+
+.items {
+  position: relative;
+  & > img {
+    margin-top: -100px;
+    @media (max-width: 1123px) {
+      margin-top: -70px;
+    }
+    @media (max-width: 992px) {
+      display: none;
+    }
+    @media (min-width: 1920px) {
+      width: 100%;
+    }
+  }
+  & > div {
+    @media (max-width: 992px) {
+      margin-top: 50px;
+      flex-wrap: wrap;
+      width: auto;
+      transform: none;
+      position: static;
+    }
+    & > div {
+      max-width: 300px;
+    }
+  }
+}
+
+.hover {
+  img {
+    transition: 0.3s;
+    &:hover {
+      transform: translateY(-45px);
+    }
+  }
+  &:hover {
+    position: relative;
+    cursor: pointer;
+    &::before {
+      content: "";
+      left: 38%;
+      bottom: 80%;
+      margin-bottom: 60px;
+      position: absolute;
+      background-image: url("../../../assets/triangle.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 50px;
+      animation: vibrate 1.5s linear infinite;
+    }
+  }
+}
+
+.nft_1 {
+  transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+}
+.nft_2 {
+  transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+}
+.nft_3 {
+  transform: rotate(-0deg);
+  -ms-transform: rotate(-0deg);
+}
+.nft_4 {
+  transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+}
+.nft_5 {
+  transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+}
+
+@keyframes vibrate {
+  0% {
+    bottom: 100%;
+  }
+  50% {
+    bottom: 96%;
+  }
+  100% {
+    bottom: 100%;
+  }
+}

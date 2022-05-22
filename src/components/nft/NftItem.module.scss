@@ -1,0 +1,38 @@
+@import "../../App.scss";
+
+.container {
+  .nft {
+    cursor: pointer;
+    max-width: 320px;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 50px;
+    height: 320px;
+    overflow: hidden;
+    background-size: 125%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 1s;
+    &:hover {
+      background-size: 90%;
+    }
+  }
+
+  h5 {
+    font-family: NexaBook;
+    font-size: 20px;
+    color: white;
+  }
+
+  h6 {
+    font-family: NexaBook;
+    font-size: 20px;
+    color: white;
+    background-color: #474520;
+    padding: 0 10px;
+    border-radius: 30px;
+    span {
+      font-weight: bold;
+    }
+  }
+}

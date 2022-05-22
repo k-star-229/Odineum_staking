@@ -1,0 +1,512 @@
+.app {
+  text-align: center;
+  font-family: "GothamBlack";
+}
+
+.landing-bg {
+  background-image: url("./assets/odineum_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.nft-bg {
+  background-image: url("./assets/nft_page.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mint-bg {
+  background-image: url("./assets/mint_page.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media (max-width: 700px) {
+    background-position: 43%;
+  }
+}
+
+.whitepaper-size {
+  position: relative;
+  max-width: 1360px;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  @media (max-width: 1360px) {
+    overflow: scroll;
+  }
+}
+
+.whitepaper-bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/nft_page.png");
+}
+
+.click {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+  img {
+    width: 30px;
+    -webkit-animation: mover 2s infinite alternate;
+    animation: mover 2s infinite alternate;
+  }
+  p {
+    color: gray;
+  }
+}
+
+.bg-logo {
+  background-color: black;
+  background-image: url(./assets/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.md-hide {
+  display: none;
+  @media (max-width: 754px) {
+    display: flex;
+  }
+}
+
+.md-show {
+  display: flex;
+  @media (max-width: 754px) {
+    display: none;
+  }
+}
+
+.app-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: app-logo-spin infinite 20s linear;
+  }
+}
+
+.app-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.app-link {
+  color: #61dafb;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.horizontal-slider {
+  width: 100%;
+  max-width: 500px;
+  height: 50px;
+  margin: 30px 30px;
+  &::before {
+    content: "1";
+    position: absolute;
+    left: -30px;
+    color: white;
+    top: 15px;
+  }
+  &::after {
+    content: "10";
+    position: absolute;
+    right: -30px;
+    color: white;
+    top: 15px;
+  }
+  @media (max-width: 700px) {
+    max-width: 250px;
+    margin: 30px 20px;
+  }
+}
+
+.example-thumb {
+  position: relative;
+  font-family: NexaBold;
+  font-size: 30px;
+  outline: none;
+  text-align: center;
+  background-color: #fff;
+  color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding-top: 25px;
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 53px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid white;
+    right: -14px;
+    top: 38px;
+  }
+}
+
+.example-thumb.active {
+  background-color: #fff;
+}
+
+.example-track {
+  position: relative;
+  background: #ffde00;
+}
+
+.example-track.example-track-1 {
+  background: #fff;
+}
+
+.horizontal-slider .example-track {
+  top: 25px;
+  height: 2px;
+}
+
+.horizontal-slider .example-thumb {
+  top: 13px;
+  width: 25px;
+  height: 25px;
+  line-height: 65px;
+  border-radius: 30px;
+}
+
+.bg-yellow {
+  background-color: #ffde00;
+}
+
+.bg-gray {
+  background-color: #202123;
+}
+.form-input {
+  border-radius: 13px;
+  min-height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &.cursor-not-allowed {
+    cursor: not-allowed;
+  }
+
+  &.justify-start {
+    justify-content: flex-start;
+  }
+
+  & > div {
+    padding: 0 22px;
+  }
+  &.rounded-21 {
+    border-radius: 21px;
+  }
+
+  & > input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: transparent;
+    border: none;
+    padding: 0 20px;
+
+    &.input-el {
+      border: 1px solid #979797;
+      border-radius: 13px;
+      padding: 16px 30px;
+      width: 170px;
+      text-align: center;
+    }
+    // &.input-tag {
+    // }
+  }
+
+  & > textarea {
+    width: 100%;
+    height: 100%;
+    min-height: 120px;
+    outline: none;
+    background: transparent;
+    border: none;
+    margin: 20px 20px;
+  }
+
+  &.trait-item {
+    min-width: 150px;
+  }
+
+  &.size-auto {
+    height: auto;
+    min-height: auto;
+  }
+
+  &.size-auto {
+    height: auto;
+    min-height: auto;
+
+    button {
+      height: auto;
+    }
+  }
+
+  button {
+    background: transparent !important;
+    height: 72px;
+    padding: 0;
+  }
+
+  a {
+    padding: 12px 36px !important;
+  }
+
+  @media (max-width: 767px) {
+    min-height: 50px;
+    button {
+      height: 50px;
+    }
+  }
+}
+.form-input {
+  box-shadow: 0px 2.12855px 12.7713px -0.532138px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5.32138px);
+  color: white;
+  position: relative;
+  background: linear-gradient(
+    150.04deg,
+    rgba(255, 255, 255, 0.34) 1.69%,
+    rgba(255, 255, 255, 0.0848247) 15.86%,
+    rgba(255, 255, 255, 0.0669139) 36.61%,
+    rgba(255, 255, 255, 0.034) 74.74%,
+    rgba(255, 255, 255, 0.34) 89.9%
+  );
+
+  &.dropdown {
+    backdrop-filter: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: #1b1d1f;
+    left: 1.21px;
+    top: 1.21px;
+    right: 1.21px;
+    bottom: 1.21px;
+    z-index: -1;
+    border-radius: 13px;
+  }
+}
+
+.bid-form-input {
+  border-radius: 13px;
+  min-height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &.cursor-not-allowed {
+    cursor: not-allowed;
+  }
+
+  &.justify-start {
+    justify-content: flex-start;
+  }
+
+  & > div {
+    padding: 0 22px;
+  }
+  &.rounded-21 {
+    border-radius: 21px;
+  }
+
+  & > input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: transparent;
+    border: none;
+    padding: 0 20px;
+
+    &.input-el {
+      border: 1px solid #979797;
+      border-radius: 13px;
+      padding: 16px 30px;
+      width: 170px;
+      text-align: center;
+    }
+    // &.input-tag {
+    // }
+  }
+
+  & > textarea {
+    width: 100%;
+    height: 100%;
+    min-height: 120px;
+    outline: none;
+    background: transparent;
+    border: none;
+    margin: 20px 20px;
+  }
+
+  &.trait-item {
+    min-width: 150px;
+  }
+
+  &.size-auto {
+    height: auto;
+    min-height: auto;
+  }
+
+  &.size-auto {
+    height: auto;
+    min-height: auto;
+
+    button {
+      height: auto;
+    }
+  }
+
+  button {
+    background: transparent !important;
+    height: 72px;
+    padding: 0;
+  }
+
+  a {
+    padding: 12px 36px !important;
+  }
+
+  @media (max-width: 767px) {
+    min-height: 50px;
+    button {
+      height: 50px;
+    }
+  }
+}
+.bid-form-input {
+  box-shadow: 0px 2.12855px 12.7713px -0.532138px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5.32138px);
+  color: white;
+  position: relative;
+  background: linear-gradient(
+    150.04deg,
+    rgba(255, 255, 255, 0.34) 1.69%,
+    rgba(255, 255, 255, 0.0848247) 15.86%,
+    rgba(255, 255, 255, 0.0669139) 36.61%,
+    rgba(255, 255, 255, 0.034) 74.74%,
+    rgba(255, 255, 255, 0.34) 89.9%
+  );
+
+  &.dropdown {
+    backdrop-filter: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: #1b1d1f;
+    left: 1.21px;
+    top: 1.21px;
+    right: 1.21px;
+    bottom: 1.21px;
+    z-index: -1;
+    border-radius: 13px;
+  }
+}
+
+.react-datepicker__input-container {
+  input {
+    background-color: #171717;
+    outline: none;
+  }
+}
+
+.bg-btn-main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  height: 60px;
+  background: linear-gradient(89.83deg, #c19af0 15.36%, #5b2194 49.92%);
+  border-radius: 8px;
+  z-index: 5;
+  cursor: pointer;
+  color: white;
+  &.cursor-not-allowed {
+    cursor: not-allowed;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(180deg, #7200ff 50%, #000000 172.62%);
+    left: 1px;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    z-index: -1;
+    border-radius: 8px;
+  }
+  &.sizeMd {
+    width: 156px;
+    height: 42px;
+  }
+  &.size-auto {
+    width: auto;
+    height: auto;
+    padding: 9px 16px;
+  }
+  &.w-full {
+    width: 100%;
+    &.btn-price {
+      border-radius: 13px;
+      height: 48px;
+      width: 100%;
+      &::before {
+        border-radius: 13px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}

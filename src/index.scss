@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "NexaBold";
+  src: local("NexaBold"), url(./fonts/NexaBold.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "NexaLight";
+  src: local("NexaLight"), url(./fonts/NexaLight.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "NexaBook";
+  src: local("NexaBook"), url(./fonts/nexa-book.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NexaThin";
+  src: local("NexaThin"), url(./fonts/FontsFree-Net-n2.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: local("BebasNeue"), url(./fonts/BebasNeue-Regular.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "GothamBlack";
+  src: local("GothamBlack"), url(./fonts/Gotham-Black.otf) format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Nexa", "NexaBold", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border: 0px solid transparent;
+  border-radius: 2.5px;
+  filter: none;
+  transition: background-color 0.25s, filter 0.25s;
+}
+
+p {
+  margin: 0;
+}
+
+.hide-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: #5a5a60;
+  transition: background-color 0.25s, filter 0.25s;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+body::-webkit-scrollbar-button {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-button {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #5a5a60;
+  border: 0px solid transparent;
+  border-radius: 2.5px;
+  filter: none;
+  transition: background-color 0.25s, filter 0.25s;
+}
+::-webkit-scrollbar-thumb:active {
+  filter: brightness(80%);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none transparent;
+  border-radius: 2.5px;
+}
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.vertical-timeline-element-content.bounce-in {
+  visibility: visible;
+  -webkit-animation: cd-bounce-2 0.6s;
+  animation: cd-bounce-2 0.6s;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.vertical-timeline {
+  max-width: 1700px !important;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: none;
+}
+
+.vertical-timeline::before {
+  top: 100px !important;
+  height: 85% !important;
+  background: #ffc737 !important;
+}
+
+.vertical-timeline-element-icon {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px #ffc737;
+}
+
+.vertical-timeline-element {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
